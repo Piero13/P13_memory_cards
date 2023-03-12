@@ -4,16 +4,6 @@ $secondary: rgb(44, 0, 0);
 $tertiary: rgb(15, 137, 185);
 $quaternary: rgb(2, 39, 54);
 
-@mixin card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    border: 2px solid $quaternary;
-    border-radius: 10px;
-    
-}
-
 @mixin bg-gradient--red {
     background: linear-gradient(to top left, $primary, $secondary, $primary);
 }
@@ -78,11 +68,6 @@ main {
 	font-size:30px;
 	cursor:pointer;
     transition: all 800ms ease-out;
-
-    &:hover {
-        transform: scale(1.1);
-        box-shadow: 3px 3px 8px $quaternary;
-    }
 
     &.flipped {
         background-color: white;
