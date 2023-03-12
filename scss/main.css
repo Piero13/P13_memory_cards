@@ -54,7 +54,11 @@ main {
   text-align: center;
   font-size: 30px;
   cursor: pointer;
-  transition: all 1s;
+  transition: all 1s ease-out;
+}
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 3px 8px rgb(2, 39, 54);
 }
 .card.flipped {
   background-color: white;

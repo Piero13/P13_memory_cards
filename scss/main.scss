@@ -77,7 +77,12 @@ main {
 	text-align:center;
 	font-size:30px;
 	cursor:pointer;
-    transition: all 1s;
+    transition: all 1s ease-out;
+
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 3px 3px 8px $quaternary;
+    }
 
     &.flipped {
         background-color: white;
