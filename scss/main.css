@@ -34,7 +34,7 @@ main {
 .board {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   width: 100vw;
   padding: 15px;
 }
@@ -93,9 +93,5 @@ main {
 @media screen and (max-width: 360px) {
   h1 {
     font-size: 16px;
-  }
-  .card {
-    width: 50px;
-    height: 65px;
   }
 }/*# sourceMappingURL=main.css.map */
