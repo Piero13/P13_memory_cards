@@ -1,6 +1,7 @@
 //variables & mixins
 $primary: rgb(199, 4, 4);
 $secondary: rgb(44, 0, 0);
+$tertiary: rgb(211, 122, 62);
 
 @mixin card {
     display: flex;
@@ -44,6 +45,7 @@ a {
 
 main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 50px;
@@ -56,6 +58,7 @@ main {
     justify-content: space-between;
     width: 100%;
     padding: 15px;
+    margin-bottom: 30px;
 }
 
 .card {
@@ -76,6 +79,20 @@ main {
     &.flipped {
         background-color: white;
         transform: rotateY(180deg);
+    }
+}
+
+.initBtn {
+    padding: 8px;
+    border-radius: 8px;
+    background-color: $tertiary;
+    box-shadow: 3px 3px 5px $secondary;
+    cursor: pointer;
+    transition: all 500ms;
+
+    &:hover {
+        transform: scale(0.9);
+        box-shadow: none;
     }
 }
 

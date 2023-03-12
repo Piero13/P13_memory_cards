@@ -67,4 +67,8 @@ function flipCard(event) {
 	}
 }
 
+function init() {
+	window.location.reload();
+}
+
 createBoard();

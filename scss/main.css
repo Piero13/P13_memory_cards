@@ -24,6 +24,7 @@ a {
 
 main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 50px;
@@ -36,6 +37,7 @@ main {
   justify-content: space-between;
   width: 100%;
   padding: 15px;
+  margin-bottom: 30px;
 }
 
 .card {
@@ -56,6 +58,19 @@ main {
 .card.flipped {
   background-color: white;
   transform: rotateY(180deg);
+}
+
+.initBtn {
+  padding: 8px;
+  border-radius: 8px;
+  background-color: rgb(211, 122, 62);
+  box-shadow: 3px 3px 5px rgb(44, 0, 0);
+  cursor: pointer;
+  transition: all 500ms;
+}
+.initBtn:hover {
+  transform: scale(0.9);
+  box-shadow: none;
 }
 
 .footer {
