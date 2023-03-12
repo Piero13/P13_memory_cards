@@ -67,12 +67,13 @@ main {
 }
 
 .initBtn {
-  padding: 8px;
+  padding: 10px 15px;
   border-radius: 8px;
   border: 1px solid rgb(44, 0, 0);
   background: linear-gradient(to top left, rgb(2, 39, 54), rgb(15, 137, 185));
   box-shadow: 3px 3px 5px rgb(44, 0, 0);
   color: white;
+  font-size: 16px;
   cursor: pointer;
   transition: all 500ms;
 }
