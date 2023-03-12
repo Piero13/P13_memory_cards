@@ -14,8 +14,6 @@ a {
 
 .header {
   background: linear-gradient(to top left, rgb(199, 4, 4), rgb(44, 0, 0), rgb(199, 4, 4));
-  position: absolute;
-  top: 0;
   width: 100%;
   padding: 20px;
   color: white;
@@ -28,14 +26,15 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 20%;
+  padding-top: 50px;
+  width: 100%;
 }
 
 .board {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 100vw;
+  width: 100%;
   padding: 15px;
 }
 
@@ -81,17 +80,17 @@ main {
   }
   .card {
     margin: 10px;
-    width: 23%;
+    width: 70px;
     height: 90px;
   }
 }
-@media screen and (min-width: 361px) and (max-width: 798px) {
+@media screen and (max-width: 380px) {
   h1 {
-    font-size: 20px;
+    font-size: 18px;
   }
-}
-@media screen and (max-width: 360px) {
-  h1 {
-    font-size: 16px;
+  .card {
+    margin: 5px;
+    width: 60px;
+    height: 80px;
   }
 }/*# sourceMappingURL=main.css.map */
