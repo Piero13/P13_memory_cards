@@ -9,8 +9,9 @@ $quaternary: rgb(2, 39, 54);
     align-items: center;
     justify-content: center;
     padding: 10px;
-    border: 2px solid $primary;
+    border: 2px solid $quaternary;
     border-radius: 10px;
+    
 }
 
 @mixin bg-gradient--red {
@@ -69,9 +70,10 @@ main {
 	width: 80px;
 	height: 100px;
     margin:15px;
-	border: 1px solid black;
+	border: 1px solid $quaternary;
     border-radius: 8px;
 	background: center / contain no-repeat url("../assets/paw_patrol_logo.png");
+    box-shadow: 3px 3px 5px $quaternary;
 	text-align:center;
 	font-size:30px;
 	cursor:pointer;
@@ -80,6 +82,7 @@ main {
     &.flipped {
         background-color: white;
         transform: rotateY(180deg);
+        box-shadow: -3px 3px 5px $quaternary;
     }
 }
 

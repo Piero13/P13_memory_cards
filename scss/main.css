@@ -47,9 +47,10 @@ main {
   width: 80px;
   height: 100px;
   margin: 15px;
-  border: 1px solid black;
+  border: 1px solid rgb(2, 39, 54);
   border-radius: 8px;
   background: center/contain no-repeat url("../assets/paw_patrol_logo.png");
+  box-shadow: 3px 3px 5px rgb(2, 39, 54);
   text-align: center;
   font-size: 30px;
   cursor: pointer;
@@ -58,6 +59,7 @@ main {
 .card.flipped {
   background-color: white;
   transform: rotateY(180deg);
+  box-shadow: -3px 3px 5px rgb(2, 39, 54);
 }
 
 .initBtn {
