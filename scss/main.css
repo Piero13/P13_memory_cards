@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background: linear-gradient(to top left, rgb(199, 4, 4), rgb(44, 0, 0), rgb(199, 4, 4));
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  color: white;
+}
+.header__title {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100vw;
+  padding: 15px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 100px;
+  margin: 15px;
+  border: 1px solid black;
+  border-radius: 8px;
+  background: center/contain no-repeat url("../assets/paw_patrol_logo.png");
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+  transition: all 1s;
+}
+.card.flipped {
+  background-color: white;
+  transform: rotateY(180deg);
+}
+
+.footer {
+  background: linear-gradient(to top left, rgb(199, 4, 4), rgb(44, 0, 0), rgb(199, 4, 4));
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+.footer a {
+  color: white;
+}
+
+@media screen and (max-width: 798px) {
+  h1 {
+    font-size: 20px;
+  }
+  .card {
+    margin: 10px;
+    width: 75px;
+    height: 90px;
+  }
+}
+@media screen and (min-width: 361px) and (max-width: 798px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 360px) {
+  h1 {
+    font-size: 16px;
+  }
+  .card {
+    width: 50px;
+    height: 65px;
+  }
+}/*# sourceMappingURL=main.css.map */
