@@ -1,7 +1,8 @@
 //variables & mixins
 $primary: rgb(199, 4, 4);
 $secondary: rgb(44, 0, 0);
-$tertiary: rgb(211, 122, 62);
+$tertiary: rgb(15, 137, 185);
+$quaternary: rgb(2, 39, 54);
 
 @mixin card {
     display: flex;
@@ -13,7 +14,7 @@ $tertiary: rgb(211, 122, 62);
 }
 
 @mixin bg-gradient--red {
-    background: linear-gradient(to top left, $primary, $secondary, $primary)
+    background: linear-gradient(to top left, $primary, $secondary, $primary);
 }
 
 //general styles
@@ -85,8 +86,10 @@ main {
 .initBtn {
     padding: 8px;
     border-radius: 8px;
-    background-color: $tertiary;
+    border: 1px solid $secondary;
+    background: linear-gradient(to top left, $quaternary, $tertiary);
     box-shadow: 3px 3px 5px $secondary;
+    color: white;
     cursor: pointer;
     transition: all 500ms;
 

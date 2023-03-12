@@ -63,8 +63,10 @@ main {
 .initBtn {
   padding: 8px;
   border-radius: 8px;
-  background-color: rgb(211, 122, 62);
+  border: 1px solid rgb(44, 0, 0);
+  background: linear-gradient(to top left, rgb(2, 39, 54), rgb(15, 137, 185));
   box-shadow: 3px 3px 5px rgb(44, 0, 0);
+  color: white;
   cursor: pointer;
   transition: all 500ms;
 }
