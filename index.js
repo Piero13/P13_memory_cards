@@ -41,13 +41,13 @@ function flipCard(event) {
 		firstCard.classList.add("flipped");
         setTimeout(function() {
             firstCard.style.background = "center / contain no-repeat url(" + pictures[k] + ")";
-        }, 500)
+        }, 400)
         
 	} else if (event.target !== firstCard) {
 		event.target.classList.add("flipped");
         setTimeout(function() {
             event.target.style.background = "center / contain no-repeat url(" + pictures[k] + ")";
-        }, 500)
+        }, 400)
         
 		if (event.target.dataset.value === firstCard.dataset.value) {
 			event.target.removeEventListener("click", flipCard);
