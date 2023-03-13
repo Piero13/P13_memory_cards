@@ -2,10 +2,13 @@
   "name": "p13_memory_cards",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./css/styles.css"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "sweetalert2": "^11.7.3"
+  }
 }
