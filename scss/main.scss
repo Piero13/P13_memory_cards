@@ -134,7 +134,7 @@ main {
     }
 
     .board {
-        gap: 15px;
+        gap: 20px;
     }
 
     .card {
@@ -146,14 +146,6 @@ main {
 @media screen and (max-width: 380px) {
     h1 {
         font-size: 18px;
-    }
-
-    main {
-        padding: 15px;
-    }
-
-    .board {
-        gap: 10px;
     }
 
     .card {

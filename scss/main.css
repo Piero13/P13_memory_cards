@@ -112,7 +112,7 @@ main {
     padding: 20px 0;
   }
   .board {
-    gap: 15px;
+    gap: 20px;
   }
   .card {
     width: 70px;
@@ -122,12 +122,6 @@ main {
 @media screen and (max-width: 380px) {
   h1 {
     font-size: 18px;
-  }
-  main {
-    padding: 15px;
-  }
-  .board {
-    gap: 10px;
   }
   .card {
     width: 60px;
