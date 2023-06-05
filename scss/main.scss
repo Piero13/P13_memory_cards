@@ -45,10 +45,10 @@ main {
 }
 
 .board {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 30px;
     padding: 15px;
     margin-bottom: 30px;
 }
@@ -59,7 +59,6 @@ main {
     align-items: center;
 	width: 80px;
 	height: 100px;
-    margin:15px;
 	border: 1px solid $quaternary;
     border-radius: 8px;
 	background: center / contain no-repeat url("../assets/paw_patrol_logo.png");
@@ -118,7 +117,6 @@ main {
     }
 
     .card {
-        margin: 10px;
         width: 70px;
 	    height: 90px;
     }
@@ -130,7 +128,6 @@ main {
     }
 
     .card {
-        margin: 5px;
         width: 60px;
 	    height: 80px;
     }

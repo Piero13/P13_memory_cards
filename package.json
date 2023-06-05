@@ -2,7 +2,7 @@
   "name": "p13_memory_cards",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./css/styles.css"
   },
@@ -10,5 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "sweetalert2": "^11.7.3"
+  },
+  "devDependencies": {
+    "webpack": "^5.76.1",
+    "webpack-cli": "^5.0.1"
   }
 }
