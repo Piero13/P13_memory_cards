@@ -118,6 +118,12 @@ main {
   h1 {
     font-size: 18px;
   }
+  main {
+    padding: 15px;
+  }
+  .board {
+    gap: 10px;
+  }
   .card {
     width: 60px;
     height: 80px;
