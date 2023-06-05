@@ -50,7 +50,7 @@ main {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 30px;
     padding: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .card {
@@ -73,6 +73,10 @@ main {
         transform: rotateY(180deg);
         box-shadow: -3px 3px 5px $quaternary;
     }
+}
+
+.score {
+    margin-bottom: 20px;
 }
 
 .initBtn {

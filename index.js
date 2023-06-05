@@ -1,6 +1,11 @@
 var cards = [1, 2, 3, 4, 5, 6, 7, 8];
 var board = document.getElementById("board");
+var score = document.getElementById("score")
+var scoreResult = document.getElementById("scoreResult");
 var firstCard = null;
+var cardsRemaining = 16;
+
+scoreResult.innerHTML = cardsRemaining;
 
 var pictures = [
     "./assets/paw_patrol_logo.png",
@@ -53,6 +58,12 @@ function flipCard(event) {
 			event.target.removeEventListener("click", flipCard);
 			firstCard.removeEventListener("click", flipCard);
             firstCard = null;
+			cardsRemaining -= 2;
+			scoreResult.innerHTML = cardsRemaining;
+			if(cardsRemaining===0) {
+				scoreResult.style.display = "none"
+				score.innerHTML = "Tu as gagné !"
+			}
 		} else {
 			setTimeout(function() {
 				event.target.classList.remove("flipped");
